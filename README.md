@@ -110,15 +110,57 @@ La aceleración se comporta de la siguiente manera:
 
 
  **Jerk**
-![Figura de prueba](IMAGES/jerk.png)  
+![Figura de prueba](IMAGES/jerk1.png)  
 
 El **jerk** es la derivada de la aceleración con respecto al tiempo. Representa **la tasa de cambio de la aceleración**. En este perfil trapezoidal:
 
 - En los puntos donde la aceleración cambia bruscamente (inicio y fin de aceleración o desaceleración), el jerk es **infinito o muy alto**, ya que el cambio es instantáneo.
 - Este comportamiento puede provocar vibraciones o esfuerzos mecánicos si no se controla adecuadamente.
+- Para que el jerk no sea muy alto y no genere daños en los motores, la solución es dimensionar bien el motor, puesto que cuando las cargas son muy grandes o estan cerca a los valores nominales, se experimenta el jerk que generalmente lo que daña es el sistema mecanico, pueden ser torsiones o flexiones en los ejes. 
 
-En aplicaciones más avanzadas, se suaviza el perfil de aceleración para que el **jerk sea continuo o limitado**, mejorando así el desempeño mecánico y reduciendo el desgaste.
+### Ejemplo 1. 
+Para el eje(axis) de la figura se desea calcular tm  
 
+![Figura de prueba](IMAGES/motor1.png)  
+
+**Geométrico**
+
+$ t_a = t_d = \frac{v_m}{a} $  
+
+$t_{total}=t_a+t_m+t_d$  
+
+Usando reglas geométricas se calcula el recorrido total L  
+
+$L=\frac{t_av_m}{2}+t_mv_m+\frac{t_dv_m}{2}$  
+$=v_m(t_a+t_m)$
+
+Entonces el tiempo de movimiento tm es:
+
+$t_m=\frac{L}{v_m}-t_a$
+
+**Analítico**
+
+Para 0<t<ta
+
+$t_0=0,\ v_0=0,\ s_0=0$
+
+$s(t)=\int_0^{t_a}at\ dt=\frac{1}{2}at^2\bigg|_0^{t_a}=\frac{1}{2}at_a^2$
+
+Para ta<t<(ta+tm)
+
+$t_0=t_a,\ v_0=v_m,\ s_0=s(t_a),\ a=0$
+
+$s(t)=s(t_a)+\int_{t_a}^t v_m\ dt=s(t_a)+v_mt\bigg|_{t_a}^t$
+
+$=s(t_a)+v_m(t-t_a)$  
+
+Para (ta+tm)<t<ttotal
+
+$t_0=(t_a+t_m),\ v_0=v_m,\ s_0=s(t_a+t_m)$
+
+$s(t)=s(t_a+t_m)+\int_{t_a+t_m}^t -a*(t-(t_a+t_m))+v_m\ dt$
+
+$s(t)=s(t_a+t_m)+\left[v_mt-\frac{1}{2}a(t-(t_a+t_m))^2\right]_{t_a+t_m}^t$
 
 
 
