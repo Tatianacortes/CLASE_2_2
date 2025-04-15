@@ -71,15 +71,18 @@ S_o = \frac{1}{2} \cdot (15 \ \mathrm{s} - 5 \ \mathrm{s}) \cdot 0.1 \ \frac{\ma
 $$
 
 
-### 3. 
+#### 3. 
 
 Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, con una velocidad de $2\ \text{m/s}$.   Después de moverse durante $5\ \text{s}$, ¿cuál es la posición del eje (axis)?  
 
 ![Figura de prueba](IMAGES/ejercicio3.png)  
 
+### Perfiles de movimientos comunes
 
+Los mas usados son perfiles trapeziodal (lineales) y curva en s sigmoidal o gaussiano (no lineales). Estos son los tipos de perfiles que se pueden programar en el controlador. 
 
-![Figura de prueba](IMAGES/ejercicio3.png)  
-
+**Trapezoidal**
+![Figura de prueba](IMAGES/trapezoidal.png) *Tomado de: [Nombre de la fuente o enlace](https://ejemplo.com)*
+Cuando hace el trayecto del punto A al punto B, se tienen tres etapas, en la primera sube la velocidad, para mantener los requerimientos del tiempo, luego cuando llega al punto máximo, se mantiene constante la velocidad, y antes de llegar al punto B se desacelera. 
 
 
