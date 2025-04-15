@@ -81,8 +81,48 @@ Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, c
 
 Los mas usados son perfiles trapeziodal (lineales) y curva en s sigmoidal o gaussiano (no lineales). Estos son los tipos de perfiles que se pueden programar en el controlador. 
 
-**Trapezoidal**
-![Figura de prueba](IMAGES/trapezoidal.png) *Tomado de: [Nombre de la fuente o enlace](https://ejemplo.com)*
-Cuando hace el trayecto del punto A al punto B, se tienen tres etapas, en la primera sube la velocidad, para mantener los requerimientos del tiempo, luego cuando llega al punto máximo, se mantiene constante la velocidad, y antes de llegar al punto B se desacelera. 
+## **Trapezoidal**    
+
+![Figura de prueba](IMAGES/Trapezoidal.png)*Tomado de: [https://www.libreservo.com/es/articulo/curvas-movimiento]([https://ejemplo.com](https://www.libreservo.com/es/articulo/curvas-movimiento))*
+
+Cuando hace el trayecto del punto A al punto B, se tienen tres etapas:
+
+1. En la primera, la velocidad aumenta (aceleración positiva).
+2. Luego, se mantiene constante para cumplir con los requerimientos de tiempo.
+3. Finalmente, antes de llegar al punto B, se desacelera (aceleración negativa).
+
+**Tiempo total** = tiempo de aceleración + tiempo de movimiento + tiempo de desaceleración
+
+Para hallar la posición B, se calcula el área bajo la curva de la velocidad (gráfica velocidad vs. tiempo), que forma un **trapezoide**. Este se compone de:
+
+- Dos triángulos (aceleración y desaceleración)
+- Un rectángulo (movimiento a velocidad constante)
+
+La aceleración se comporta de la siguiente manera:
+
+- Es constante y positiva mientras la velocidad aumenta (pendiente positiva).
+- Es cero durante la etapa de velocidad constante.
+- Es constante y negativa durante la fase de frenado (pendiente negativa).
+
+> Un perfil de velocidad **no necesariamente es simétrico**.  
+> Por eso se utilizan **trapezoides** y no trapecios, ya que se puede necesitar más tiempo para acelerar y menos para desacelerar, o viceversa, dependiendo de los requerimientos del proceso.  
+> El trapezoide permite **ajustarse a las condiciones específicas** de cada aplicación.
+
+
+ **Jerk**
+![Figura de prueba](IMAGES/jerk.png)  
+
+El **jerk** es la derivada de la aceleración con respecto al tiempo. Representa **la tasa de cambio de la aceleración**. En este perfil trapezoidal:
+
+- En los puntos donde la aceleración cambia bruscamente (inicio y fin de aceleración o desaceleración), el jerk es **infinito o muy alto**, ya que el cambio es instantáneo.
+- Este comportamiento puede provocar vibraciones o esfuerzos mecánicos si no se controla adecuadamente.
+
+En aplicaciones más avanzadas, se suaviza el perfil de aceleración para que el **jerk sea continuo o limitado**, mejorando así el desempeño mecánico y reduciendo el desgaste.
+
+
+
+
+
+
 
 
