@@ -15,13 +15,15 @@ En muchas aplicaciones, no basta solo con mover algo de un punto A a un punto B,
 ## Curvas
 Cuando se diseña un perfil se obtienen las siguientes curvas, estas curvas son diseñadas por el usuario, puesto que se hacen para un caso especifico de acuerdo a las necesidades y movimiento que se quiera en el controlador. Dependiendo de lo que se conozca del proceso se puede comenzar con la curva de posiciòn, sin embargo en la mayoria de procesos se comienza con la curva de velocidad, pues se necesita garatizar cierto desplazamiento por unidad de tiempo, para posteriormente realizar las de posiciòn y aceleraciòn. 
 
+![Figura de prueba](IMAGES/curvas.png)
+
 ## Reglas geométricas
 
 -La posición es el área bajo el perfil de velocidad.
 
 -La acelaración pendiente de el perfil de velocidad. 
 
-
+![Figura de prueba](IMAGES/grafica.png)
 
 
 
