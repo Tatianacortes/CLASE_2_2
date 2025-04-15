@@ -33,10 +33,53 @@ Donde $t_0$ representa el tiempo inicial, $v_0$ la velocidad inicial y $s_0$ la 
 
 ### Ejemplo
 
-Encuentre la posición y la aceleración en t=5s
-![Figura de prueba](IMAGES/Ejercicio.png)
+#### 1. 
+Encuentre la posición y la aceleración en t=5s  
+
+![Figura de prueba](IMAGES/Ejercicio.png)  
+
 La aceleración sería la pendiente de la velocidad
  $m=\dfrac{10-0}{5-0}=2$
  $a=2$
 
 Posición: 
+$s=\dfrac{1}{2}*(10)(5)$
+$s= 25\dfrac{in}{s}$
+
+#### 2. 
+
+Un eje está viajando a una velocidad de **10 cm/s**. En **t = 5 s**, empieza a disminuir la velocidad como se ve en el perfil.  ¿Cuál es la posición del eje cuando se detiene?  Asuma que empieza a desacelerar a **25 cm/s²**.
+
+![Figura de prueba](IMAGES/ejercicio2.png)  
+
+La pendiente de la velocidad es la aceleración:  
+
+$$a = \frac{-10 \ \text{cm/s} \cdot \frac{1 \ \text{m}}{100 \ \text{cm}}}{(15 \ \text{s} - 5 \ \text{s})}$$
+
+$$
+= \frac{-0.1 \ \text{m/s}}{10 \ \text{s}}
+$$
+
+$$
+= -0.01 \ \text{m/s}^2
+$$
+
+El área del perfil de velocidad triangular es la posición alcanzada en t=15s
+
+$$
+S_o = \frac{1}{2} \cdot (15 \ \mathrm{s} - 5 \ \mathrm{s}) \cdot 0.1 \ \frac{\mathrm{m}}{\mathrm{s}} = 0.5 \ \mathrm{m}
+$$
+
+
+### 3. 
+
+Un eje (axis) lineal comienza su movimiento desde el reposo en la posición 0, con una velocidad de $2\ \text{m/s}$.   Después de moverse durante $5\ \text{s}$, ¿cuál es la posición del eje (axis)?  
+
+![Figura de prueba](IMAGES/ejercicio3.png)  
+
+
+
+![Figura de prueba](IMAGES/ejercicio3.png)  
+
+
+
