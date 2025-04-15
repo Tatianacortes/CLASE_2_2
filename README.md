@@ -31,4 +31,12 @@ $s=s_0+\dfrac{1}{2}(t-t_0)(v_0+a(t-t_0))$
 
 Donde $t_0$ representa el tiempo inicial, $v_0$ la velocidad inicial y $s_0$ la posición en el instante inicial. La aceleración, considerada constante, se denota como $a$.
 
+### Ejemplo
 
+Encuentre la posición y la aceleración en t=5s
+![Figura de prueba](IMAGES/Ejercicio.png)
+La aceleración sería la pendiente de la velocidad
+ $m=\dfrac{10-0}{5-0}=2$
+ $a=2$
+
+Posición: 
