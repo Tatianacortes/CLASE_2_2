@@ -23,8 +23,12 @@ Cuando se diseña un perfil se obtienen las siguientes curvas, estas curvas son 
 
 -La acelaración pendiente de el perfil de velocidad. 
 
-![Figura de prueba](IMAGES/grafica.png)
+![Figura de prueba](IMAGES/grafica2.png)
 
+$v=v_0+a(t-t_0)$
 
+$s=s_0+\dfrac{1}{2}(t-t_0)(v_0+a(t-t_0))$
+
+Donde $t_0$ representa el tiempo inicial, $v_0$ la velocidad inicial y $s_0$ la posición en el instante inicial. La aceleración, considerada constante, se denota como $a$.
 
 
