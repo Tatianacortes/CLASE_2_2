@@ -109,7 +109,8 @@ La aceleración se comporta de la siguiente manera:
 > El trapezoide permite **ajustarse a las condiciones específicas** de cada aplicación.
 
 
- **Jerk**
+ **Jerk**  
+ 
 ![Figura de prueba](IMAGES/jerk1.png)  
 
 El **jerk** es la derivada de la aceleración con respecto al tiempo. Representa **la tasa de cambio de la aceleración**. En este perfil trapezoidal:
@@ -118,14 +119,15 @@ El **jerk** es la derivada de la aceleración con respecto al tiempo. Representa
 - Este comportamiento puede provocar vibraciones o esfuerzos mecánicos si no se controla adecuadamente.
 - Para que el jerk no sea muy alto y no genere daños en los motores, la solución es dimensionar bien el motor, puesto que cuando las cargas son muy grandes o estan cerca a los valores nominales, se experimenta el jerk que generalmente lo que daña es el sistema mecanico, pueden ser torsiones o flexiones en los ejes. 
 
-### Ejemplo 1. 
+### Ejemplo 
+#### 1. 
 Para el eje(axis) de la figura se desea calcular tm  
 
 ![Figura de prueba](IMAGES/motor1.png)  
 
 **Geométrico**
 
-$ t_a = t_d = \frac{v_m}{a} $  
+$t_a = t_d = \frac{v_m}{a}$  
 
 $t_{total}=t_a+t_m+t_d$  
 
@@ -161,6 +163,21 @@ $t_0=(t_a+t_m),\ v_0=v_m,\ s_0=s(t_a+t_m)$
 $s(t)=s(t_a+t_m)+\int_{t_a+t_m}^t -a*(t-(t_a+t_m))+v_m\ dt$
 
 $s(t)=s(t_a+t_m)+\left[v_mt-\frac{1}{2}a(t-(t_a+t_m))^2\right]_{t_a+t_m}^t$
+
+#### 2. 
+
+El eje x de un robot Gantry debe moverse 10 cm. La máxima aceleración permitida en este eje es 1 cm/s².  Si se desea mover el eje a una velocidad máxima de 2 cm/s, ¿cuánto tiempo tomará hacer este movimiento?
+
+![Figura de prueba](IMAGES/a.png)  
+
+
+$t_a = t_d = \frac{v_m}{a} = \frac{2\ \text{cm/s}}{1\ \text{cm/s}^2} = 2\ \text{s}$  
+$t_m = \frac{L}{v_m} - t_a = \frac{10\ \text{cm}}{2\ \text{cm/s}} - 2\ \text{s} = 3\ \text{s}$  
+
+$t_{total} = t_a + t_m + t_d = 2 + 3 + 2 = 7\ \text{s}$
+
+
+
 
 
 
