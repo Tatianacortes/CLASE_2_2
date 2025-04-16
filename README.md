@@ -198,9 +198,77 @@ $$
 S_C = 22 \, \text{cm}
 $$
 
+## Ejercicios adicionales
 
+### 1
 
+Un eje está viajando a una velocidad de **8 cm/s**. En $t=4\text{ s}$, empieza a disminuir su velocidad. ¿Cuál es la posición del eje cuando se detiene? Asuma que empieza a desacelerar a **$20\ \text{cm/s}^2$**.
 
+**Datos:**
+- $v_0=8\ \text{cm/s}$
+- $a=-20\ \text{cm/s}^2$
+
+**Tiempo para detenerse:**
+$t_d=\frac{v_0}{|a|}=\frac{8}{20}=0.4\ \text{s}$
+
+**Distancia recorrida durante la desaceleración:**
+$s_d=\frac{1}{2}v_0t_d=\frac{1}{2}\cdot8\cdot0.4=1.6\ \text{cm}$
+
+**Posición al inicio de la desaceleración:**
+$s_0=v_0\cdot t=8\cdot4=32\ \text{cm}$
+
+**Posición final:**
+$s=s_0+s_d=32+1.6= \boxed{33.6\ \text{cm}}$
+
+### 2.
+
+Dado el perfil de velocidad de la figura, calcule $S_A,S_B,S_C$ usando las reglas geométricas y el método analítico del perfil de movimiento.
+
+![Figura de prueba](IMAGES/CC.png)    
+
+**Datos:**
+- Aceleración: $a=12\,\text{cm/s}^2$
+- Velocidad máxima: $v=6\,\text{cm/s}$
+- Tiempo de aceleración: $t_1=0.5\,\text{s}$
+- Tiempo a velocidad constante: $t_2=4\,\text{s}$
+- Tiempo de desaceleración: $t_3=0.5\,\text{s}$
+
+---
+
+**Cálculo de $S_A$ (aceleración):**
+$$
+S_A=\int_0^{0.5}12t\,dt=\left[\frac{12t^2}{2}\right]_0^{0.5}=6t^2\bigg|_0^{0.5}
+$$
+$$
+S_A=6(0.5)^2=6(0.25)=1.5\,\text{cm}
+$$
+
+---
+
+**Cálculo de $S_B$ (velocidad constante):**
+$$
+S_B=S_A+v\cdot t_2=1.5+6\cdot 4=1.5+24=25.5\,\text{cm}
+$$
+
+---
+
+**Cálculo de $S_C$ (desaceleración):**
+$$
+S_C=S_B+\int_0^{0.5}6-12t\,dt
+$$
+$$
+\int_0^{0.5}6-12t\,dt=\left[6t-6t^2\right]_0^{0.5}=3-1.5=1.5\,\text{cm}
+$$
+$$
+S_C=25.5+1.5=27\,\text{cm}
+$$
+
+---
+
+**Resultados finales:**
+- $S_A=1.5\,\text{cm}$
+- $S_B=25.5\,\text{cm}$
+- $S_C=27\,\text{cm}$
 
 
 
