@@ -180,7 +180,7 @@ $t_{total} = t_a + t_m + t_d = 2 + 3 + 2 = 7\ \text{s}$
 
 Dado el perfil de velocidad de la figura, calcule $S_A, S_B, S_C$ usando las reglas geométricas y el método analítico del perfil de movimiento.
 
-![Figura de prueba](IMAGES/ejercicio3.png)  
+![Figura de prueba](IMAGES/bb.png)  
 
 $$
 S_A = \int_0^{0.5} 8t \, dt = \frac{8t^2}{2} \Big|_0^{0.5} = 4t^2 \Big|_0^{0.5}
