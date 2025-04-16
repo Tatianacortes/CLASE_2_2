@@ -227,7 +227,6 @@ Dado el perfil de velocidad de la figura, calcule $S_A,S_B,S_C$ usando las regla
 ![Figura de prueba](IMAGES/CC.png)    
 
 **Datos:**
-- Aceleración: $a=12\,\text{cm/s}^2$
 - Velocidad máxima: $v=6\,\text{cm/s}$
 - Tiempo de aceleración: $t_1=0.5\,\text{s}$
 - Tiempo a velocidad constante: $t_2=4\,\text{s}$
@@ -235,35 +234,25 @@ Dado el perfil de velocidad de la figura, calcule $S_A,S_B,S_C$ usando las regla
 
 ---
 
-**Cálculo de $S_A$ (aceleración):**
-$$
-S_A=\int_0^{0.5}12t\,dt=\left[\frac{12t^2}{2}\right]_0^{0.5}=6t^2\bigg|_0^{0.5}
-$$
-$$
-S_A=6(0.5)^2=6(0.25)=1.5\,\text{cm}
-$$
+**Cálculo de $S_A$ (aceleración):**  
 
----
+$$S_A=\int_0^{0.5}12t\,dt=\left[\frac{12t^2}{2}\right]_0^{0.5}=6t^2\bigg|_0^{0.5}$$  
 
-**Cálculo de $S_B$ (velocidad constante):**
-$$
-S_B=S_A+v\cdot t_2=1.5+6\cdot 4=1.5+24=25.5\,\text{cm}
-$$
+$$S_A=6(0.5)^2=6(0.25)=1.5\,\text{cm}$$  
 
----
+**Cálculo de $S_B$ (velocidad constante):**  
 
-**Cálculo de $S_C$ (desaceleración):**
-$$
-S_C=S_B+\int_0^{0.5}6-12t\,dt
-$$
-$$
-\int_0^{0.5}6-12t\,dt=\left[6t-6t^2\right]_0^{0.5}=3-1.5=1.5\,\text{cm}
-$$
-$$
-S_C=25.5+1.5=27\,\text{cm}
-$$
+$$S_B=S_A+v\cdot t_2=1.5+6\cdot 4=1.5+24=25.5\,\text{cm}$$
 
----
+
+**Cálculo de $S_C$ (desaceleración):**  
+
+$$S_C=S_B+\int_0^{0.5}6-12t\,dt$$  
+
+$$\int_0^{0.5}6-12t\,dt=\left[6t-6t^2\right]_0^{0.5}=3-1.5=1.5\,\text{cm}$$  
+
+$$S_C=25.5+1.5=27\,\text{cm}$$
+
 
 **Resultados finales:**
 - $S_A=1.5\,\text{cm}$
